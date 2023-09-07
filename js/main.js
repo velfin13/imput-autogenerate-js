@@ -63,10 +63,14 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Cuando se envía el formulario, puedes acceder a los valores almacenados en el array "valoresCampos"
+    // Cuando se envía el formulario, valida que haya al menos un elemento en el array "valoresCampos" antes de enviarlo
     formulario.addEventListener('submit', function (e) {
         e.preventDefault();
-        console.log(valoresCampos);
-        // Puedes hacer lo que necesites con los valores aquí, como enviarlos a un servidor o procesarlos de alguna manera.
+        if (valoresCampos.length === 0 || valoresCampos.every(function (valor) { return valor.trim() === '' })) {
+            alert('No se puede guardar porque no hay elementos en el array.');
+        } else {
+            console.log(valoresCampos);
+            // Puedes hacer lo que necesites con los valores aquí, como enviarlos a un servidor o procesarlos de alguna manera.
+        }
     });
 });
