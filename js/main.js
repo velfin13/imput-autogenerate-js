@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var formulario = document.getElementById('miFormulario');
+    var formulario = document.getElementById('formAddCaracteristicaPregunta');
     var botonAgregarCampo = document.getElementById('agregarCampo');
     var contadorCampos = 0;
     var valoresCampos = []; // Array para almacenar los valores de los campos
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
             etiqueta.innerHTML = '<label for="campo' + contadorCampos + '">Campo ' + contadorCampos + ':</label>';
 
             var entrada = document.createElement('td');
-            entrada.innerHTML = '<input type="text" id="campo' + contadorCampos + '" name="campo' + contadorCampos + '">';
+            entrada.innerHTML = '<input class="formAddCaracteristicaPregunta_imput" type="text" id="campo' + contadorCampos + '" name="campo' + contadorCampos + '">';
 
             nuevaFila.appendChild(etiqueta);
             nuevaFila.appendChild(entrada);
@@ -29,8 +29,8 @@ document.addEventListener('DOMContentLoaded', function () {
             valoresCampos.push('');
             
             var botonEliminar = document.createElement('td');
-            botonEliminar.innerHTML = '<button type="button" class="eliminarCampo">Eliminar</button>';
-            botonEliminar.querySelector('.eliminarCampo').addEventListener('click', function () {
+            botonEliminar.innerHTML = '<button type="button" class="formAddCaracteristicaPreguntaActionsbutton_eliminar">Eliminar</button>';
+            botonEliminar.querySelector('.formAddCaracteristicaPreguntaActionsbutton_eliminar').addEventListener('click', function () {
                 tbody.removeChild(nuevaFila);
                 // Elimina el valor del campo del array cuando se elimina el campo
                 valoresCampos.splice(contadorCampos - 1, 1);

@@ -6,19 +6,21 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <form id="miFormulario">
-        <table>
-            <thead>
+    <form id="formAddCaracteristicaPregunta" class="formAddCaracteristicaPregunta">
+        <table class="formAddCaracteristicaPregunta_table">
+            <thead class="header-table-caracteristica-pregunta">
                 <tr>
                     <th>Campo</th>
                     <th>Valor</th>
-                    <th></th>
+                    <th>Acciones</th>
                 </tr>
             </thead>
             <tbody></tbody>
         </table>
-        <button type="button" id="agregarCampo">Agregar Campo de Entrada</button>
-        <button type="submit" id="enviar">guardar</button>
+        <div class="formAddCaracteristicaPreguntaActions">
+            <button class="formAddCaracteristicaPreguntaActionsbutton" type="button" id="agregarCampo">Agregar Campo de Entrada</button>
+            <button class="formAddCaracteristicaPreguntaActionsbutton" type="submit" id="enviar">guardar</button>
+        </div>  
     </form>
 
     <script src="js/main.js"></script>

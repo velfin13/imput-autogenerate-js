@@ -1,11 +1,54 @@
-table {
-    border-collapse: collapse;
-    width: 400px;
-    text-align: center;
+.formAddCaracteristicaPregunta_table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 20px;
 }
-th, td {
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    padding: 8px;
-    text-align: center;
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.formAddCaracteristicaPregunta {
+  width: 100%;
+}
+
+.formAddCaracteristicaPregunta_imput {
+  width: 80%;
+  padding: 3px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.header-table-caracteristica-pregunta {
+  color: #fff;
+  background: #6c7ae0;
+}
+
+.formAddCaracteristicaPreguntaActions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.formAddCaracteristicaPreguntaActionsbutton {
+  padding: 10px 20px;
+  background-color: #6c7ae0;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formAddCaracteristicaPreguntaActionsbutton_eliminar {
+  padding: 10px 20px;
+  background-color: #cd3737;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
